@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "SF Pro Display", sans-serif;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  color: rgb(54, 54, 54);
+}
+
+.App {
+  transition: 0.25s all linear;
+  padding: 30px 0;
+}
+
+.library-active {
+  margin-left: 10%;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 23px;
+  z-index: 100000;
+  i {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  span {
+    margin-top: 10px;
+  }
+}
+@import "./player";
+@import "./song";
+@import "./library";
+@import "./_nav";
